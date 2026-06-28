@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 大容量データセット（GitHubの容量制限のため除外）
+EUVPdataset_Unpaired/
+dataset/
+
+# 学習済みモデル・チェックポイント
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.h5
+
+# 学習結果
+results/
+
+# 環境
+.env
+*.egg-info/
+dist/
+build/
+
+# エディタ
+.vscode/
+.idea/
