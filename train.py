@@ -19,6 +19,21 @@
 よくある質問: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/qa.md
 """
 
+"""
+実行
+docker run --gpus all \
+-p 8097:8097 \
+-v $(pwd)/dataset:/workspace/dataset \
+-v $(pwd)/checkpoints:/workspace/checkpoints \
+-v $(pwd)/logs:/workspace/logs \
+cyclegan-train \
+bash -c "bash run_train.sh 2>&1 | tee logs/train_$(date +%Y%m%d_%H%M%S).log"
+
+ローカルの場合
+bash run_train.sh
+
+"""
+
 import time
 from options.train_options import TrainOptions
 from data import create_dataset

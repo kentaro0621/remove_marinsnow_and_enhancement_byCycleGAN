@@ -27,7 +27,15 @@ results/
 *.egg-info/
 dist/
 build/
+venv/
 
 # エディタ
 .vscode/
 .idea/
+
+# ログ
+logs/
+training.log
+
+# Docker
+.dockerignore
